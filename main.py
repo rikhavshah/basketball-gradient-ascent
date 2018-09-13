@@ -4,4 +4,4 @@ from probability_map import Processor
 
 p = Processor(shot_data)
 
-p.probability_mesh();
+mesh = p.probability_mesh();
