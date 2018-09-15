@@ -20,7 +20,7 @@ To reproduce our analysis, start in the
 GitHub limits and data size, we have included one compressed set of SportVU data as an example. In order to reproduce
 the full analysis, one must move the .7z files from the data mirror we used from [this external
 repository](https://github.com/sealneaward/nba-movement-data/tree/master/data) into the DataCleaning directory. The
-(shots.csv)[https://github.com/rikhavshah/basketball-gradient-ascent/blob/master/DataCleaning/shots/shots.csv] file is
+[shots.csv](https://github.com/rikhavshah/basketball-gradient-ascent/blob/master/DataCleaning/shots/shots.csv) file is
 also pulled from there and used as our starting point.
 
 The
