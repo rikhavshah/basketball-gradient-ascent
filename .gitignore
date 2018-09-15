@@ -1,4 +1,5 @@
 *.csv
 .idea/
 *.xml
+*.7z
 .DS_Store
