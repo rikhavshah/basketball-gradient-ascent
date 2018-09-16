@@ -43,5 +43,6 @@ version 3.5.1. To reproduce our results, take the output csv files from DataClea
 and move them into the DefensiveCoverage directory, then run the calculation script first, followed by the analysis
 script for the visuals.
 ## Gradient Ascent
-For this section, the Python code is supplied in Jupyter notebooks in the [GradientAnalysis]() directory. Simply opening the files in there will allow the
+For this section, the Python code is supplied in Jupyter notebooks in the
+[GradientAnalysis](https://github.com/rikhavshah/basketball-gradient-ascent/tree/master/GradientAnalysis) directory. Simply opening the files in there will allow the
 notebooks to run, given that the data is supplied as well.
