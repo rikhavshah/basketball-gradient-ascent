@@ -97,6 +97,13 @@ class Processor:
 
 		return total_successes/total_weight;
 
+	def approximate_probability_at_point(self,point,meshtype = 1):
+		if meshtype not in self.meshes:
+			self.probability_mesh(meshtype)
+		mesh = self.meshes[meshtype]
+		t = tuple(self._snap_to_lattice(point,meshtype))
+		return mesh[t] if t in mesh else 100000000
+
 	#default is 1 foot mesh
 	def probability_mesh(self,delta=1):
 		self.probability_at_point(None);
@@ -109,9 +116,9 @@ class Processor:
 		print('making mesh')
 
 		mesh = {};
-		for i in range(court_shape_0_min,court_shape_0_max):
-			print(i)
-			for j in range(court_shape_1_min,court_shape_1_max):
+		for i in range(court_shape_0_min,court_shape_0_max,delta):
+			# print(i)
+			for j in range(court_shape_1_min,court_shape_1_max,delta):
 				mesh[(i,j)] = self.probability_at_point(np.array([i,j]));
 
 		self.meshes[delta] = mesh;
