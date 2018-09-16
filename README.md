@@ -36,7 +36,9 @@ script, these output files will be in the correct format for the rest of our ana
 To reproduce the probability mesh, one simply needs to run the ProbabilityMapMain.py file from the
 [ProbabilityMap](https://github.com/rikhavshah/basketball-gradient-ascent/tree/master/ProbabilityMap) directory. The
 data relevant shot data is already extracted from the shot.csv files and putin the directory as well as a numpy array
-stored in ProbabilityMap/shot_data.py.
+stored in ProbabilityMap/shot_data.py. Running this file causes the probability mesh that we refer to in our paper to be
+stored in the variable "mesh". Further usage of this variable is shown in the Gradient Ascent section and the
+corresponding scripts.
 ## Defensive Coverage
 For this section, the code is written and visualized in R. Required packages are written into the code and run on R
 version 3.5.1. To reproduce our results, take the output csv files from DataCleaning that contain the shots and moments,
