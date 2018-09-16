@@ -45,4 +45,4 @@ script for the visuals.
 ## Gradient Ascent
 For this section, the Python code is supplied in Jupyter notebooks in the
 [GradientAnalysis](https://github.com/rikhavshah/basketball-gradient-ascent/tree/master/GradientAnalysis) directory. Simply opening the files in there will allow the
-notebooks to run, given that the data is supplied as well.
+notebooks to run, assuming that the data is moved in as well.
